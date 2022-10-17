@@ -36,10 +36,8 @@ const data = [
   },
 ];
 
-// const imcTable = document.getElementById("form-imc");
 const imcResult = document.getElementById("container-result");
 const imcCalc = document.getElementById("container-calc");
-
 const imcDivHide = document.getElementById("result-classification");
 const heightInput = document.getElementById("height");
 const weightInput = document.getElementById("weight");
@@ -67,6 +65,8 @@ function classificationData(data) {
 function clearInputs() {
   heightInput.value = "";
   weightInput.value = "";
+  numberImc.className = "";
+  infoImc.className = "";
 }
 
 function validDigits(text) {
@@ -119,7 +119,6 @@ calcBtn.addEventListener("click", (el) => {
     case "Magreza":
       numberImc.classList.add("low");
       infoImc.classList.add("low");
-
       break;
     case "Normal":
       numberImc.classList.add("good");
