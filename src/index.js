@@ -1,3 +1,5 @@
+import "./styles/index.css";
+
 const data = [
   {
     min: 0,
@@ -57,7 +59,9 @@ function classificationData(data) {
     info.innerText = item.info;
     const obesity = document.createElement("p");
     obesity.innerText = item.obesity;
-    div.append(classification, info, obesity);
+    div.appendChild(classification);
+    div.appendChild(obesity);
+    div.appendChild(info);
     imcDivHide.appendChild(div);
   });
 }
