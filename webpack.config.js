@@ -11,7 +11,7 @@ module.exports = {
   entry: {
     index: "./src/index.js",
   },
-  mode: "production",
+  mode: "development",
   module: {
     rules: [
       {
@@ -25,6 +25,7 @@ module.exports = {
     ],
   },
   output: {
-    filename: "[name].min.js",
+    path: path.resolve(__dirname, "public"),
+    filename: "[name].bundle.min.js",
   },
 };
