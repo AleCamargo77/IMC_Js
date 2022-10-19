@@ -24,8 +24,8 @@ module.exports = {
       },
     ],
   },
-  output: {
-    path: path.resolve(__dirname, "public"),
-    filename: "[name].bundle.min.js",
-  },
+  // output: {
+  //   path: path.resolve(__dirname, "public"),
+  //   filename: "[name].bundle.min.js",
+  // },
 };
