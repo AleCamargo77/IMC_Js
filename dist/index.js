@@ -1,1 +1,79 @@
-(()=>{"use strict";var r={705:r=>{r.exports=function(r){var n=[];return n.toString=function(){return this.map((function(n){var e="",t=void 0!==n[5];return n[4]&&(e+="@supports (".concat(n[4],") {")),n[2]&&(e+="@media ".concat(n[2]," {")),t&&(e+="@layer".concat(n[5].length>0?" ".concat(n[5]):""," {")),e+=r(n),t&&(e+="}"),n[2]&&(e+="}"),n[4]&&(e+="}"),e})).join("")},n.i=function(r,e,t,o,a){"string"==typeof r&&(r=[[null,r,void 0]]);var i={};if(t)for(var c=0;c<this.length;c++){var s=this[c][0];null!=s&&(i[s]=!0)}for(var l=0;l<r.length;l++){var d=[].concat(r[l]);t&&i[d[0]]||(void 0!==a&&(void 0===d[5]||(d[1]="@layer".concat(d[5].length>0?" ".concat(d[5]):""," {").concat(d[1],"}")),d[5]=a),e&&(d[2]?(d[1]="@media ".concat(d[2]," {").concat(d[1],"}"),d[2]=e):d[2]=e),o&&(d[4]?(d[1]="@supports (".concat(d[4],") {").concat(d[1],"}"),d[4]=o):d[4]="".concat(o)),n.push(d))}},n}},738:r=>{r.exports=function(r){return r[1]}},771:(r,n,e)=>{e.d(n,{Z:()=>c});var t=e(738),o=e.n(t),a=e(705),i=e.n(a)()(o());i.push([r.id,'* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n  font-family: "Roboto", sans-serif;\r\n}\r\n\r\n:root {\r\n  --var-bgd-primary: #3fbecf;\r\n  --var-bgd-secondary: #437a82;\r\n  --var-bgd-button: tomato;\r\n  --var-color-white: #fff;\r\n  --var-color-grey: #ccc;\r\n  --var-color-green: #12db34;\r\n  --var-color-yellow: #dbce12;\r\n  --var-color-orange: #db6212;\r\n  --var-color-red: #db1912;\r\n}\r\n\r\nbody {\r\n  background-color: var(--var-bgd-primary);\r\n  color: var(--var-color-white);\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  height: 100vh;\r\n}\r\n\r\n.hide {\r\n  display: none !important;\r\n}\r\n\r\n.container {\r\n  min-width: 400px;\r\n  min-height: 400px;\r\n  background-color: var(--var-bgd-secondary);\r\n  padding: 2rem;\r\n}\r\n\r\n#container-calc h2 {\r\n  text-align: center;\r\n  margin-bottom: 2rem;\r\n}\r\n\r\n.form-inputs {\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: space-between;\r\n}\r\n\r\n.form-control {\r\n  display: flex;\r\n  flex-direction: column;\r\n  flex: 1;\r\n  margin-bottom: 1rem;\r\n}\r\n\r\n.form-control label {\r\n  font-weight: bold;\r\n  margin-bottom: 0.6rem;\r\n  color: var(--var-color-grey);\r\n}\r\n\r\n.form-control input {\r\n  padding: 1rem 0.5rem;\r\n}\r\n\r\n.btn-control {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  margin-top: 2rem;\r\n  gap: 1rem;\r\n}\r\n\r\nbutton {\r\n  text-transform: uppercase;\r\n  padding: 1rem 1.5rem;\r\n  border: none;\r\n  background-color: var(--var-bgd-button);\r\n  color: var(--var-color-white);\r\n  cursor: pointer;\r\n  flex: 1;\r\n  opacity: 0.8;\r\n}\r\n\r\nbutton:hover {\r\n  opacity: 1;\r\n}\r\n\r\n#clear {\r\n  background-color: var(--var-color-grey);\r\n}\r\n\r\n#container-result {\r\n  text-align: center;\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n#number-imc {\r\n  font-size: 2.4rem;\r\n  margin-bottom: 0.6rem;\r\n}\r\n\r\n#info-imc {\r\n  font-size: 1.4rem;\r\n  color: var(--var-color-grey);\r\n}\r\n\r\n#container-result h3 {\r\n  margin-top: 1rem;\r\n  color: var(--var-color-white);\r\n}\r\n\r\n.result-classification {\r\n  margin: 1.5rem 0;\r\n  font-size: 0.8rem;\r\n}\r\n\r\n.table-header,\r\n.table-data {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  margin-bottom: 0.5rem;\r\n  padding-bottom: 0.5rem;\r\n  border-bottom: 1px solid var(--var-color-grey);\r\n}\r\n\r\n.table-header h4,\r\n.table-data p {\r\n  flex: 1;\r\n  font-size: 0.9rem;\r\n}\r\n\r\n#back {\r\n  align-self: center;\r\n}\r\n\r\n.good {\r\n  color: var(--var-color-green);\r\n}\r\n\r\n.low {\r\n  color: var(--var-color-yellow);\r\n}\r\n\r\n.medium {\r\n  color: var(--var-color-orange);\r\n}\r\n\r\n.high {\r\n  color: var(--var-color-red);\r\n}\r\n',""]);const c=i},379:r=>{var n=[];function e(r){for(var e=-1,t=0;t<n.length;t++)if(n[t].identifier===r){e=t;break}return e}function t(r,t){for(var a={},i=[],c=0;c<r.length;c++){var s=r[c],l=t.base?s[0]+t.base:s[0],d=a[l]||0,u="".concat(l," ").concat(d);a[l]=d+1;var m=e(u),f={css:s[1],media:s[2],sourceMap:s[3],supports:s[4],layer:s[5]};if(-1!==m)n[m].references++,n[m].updater(f);else{var p=o(f,t);t.byIndex=c,n.splice(c,0,{identifier:u,updater:p,references:1})}i.push(u)}return i}function o(r,n){var e=n.domAPI(n);return e.update(r),function(n){if(n){if(n.css===r.css&&n.media===r.media&&n.sourceMap===r.sourceMap&&n.supports===r.supports&&n.layer===r.layer)return;e.update(r=n)}else e.remove()}}r.exports=function(r,o){var a=t(r=r||[],o=o||{});return function(r){r=r||[];for(var i=0;i<a.length;i++){var c=e(a[i]);n[c].references--}for(var s=t(r,o),l=0;l<a.length;l++){var d=e(a[l]);0===n[d].references&&(n[d].updater(),n.splice(d,1))}a=s}}},569:r=>{var n={};r.exports=function(r,e){var t=function(r){if(void 0===n[r]){var e=document.querySelector(r);if(window.HTMLIFrameElement&&e instanceof window.HTMLIFrameElement)try{e=e.contentDocument.head}catch(r){e=null}n[r]=e}return n[r]}(r);if(!t)throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");t.appendChild(e)}},216:r=>{r.exports=function(r){var n=document.createElement("style");return r.setAttributes(n,r.attributes),r.insert(n,r.options),n}},565:(r,n,e)=>{r.exports=function(r){var n=e.nc;n&&r.setAttribute("nonce",n)}},795:r=>{r.exports=function(r){var n=r.insertStyleElement(r);return{update:function(e){!function(r,n,e){var t="";e.supports&&(t+="@supports (".concat(e.supports,") {")),e.media&&(t+="@media ".concat(e.media," {"));var o=void 0!==e.layer;o&&(t+="@layer".concat(e.layer.length>0?" ".concat(e.layer):""," {")),t+=e.css,o&&(t+="}"),e.media&&(t+="}"),e.supports&&(t+="}");var a=e.sourceMap;a&&"undefined"!=typeof btoa&&(t+="\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(a))))," */")),n.styleTagTransform(t,r,n.options)}(n,r,e)},remove:function(){!function(r){if(null===r.parentNode)return!1;r.parentNode.removeChild(r)}(n)}}}},589:r=>{r.exports=function(r,n){if(n.styleSheet)n.styleSheet.cssText=r;else{for(;n.firstChild;)n.removeChild(n.firstChild);n.appendChild(document.createTextNode(r))}}}},n={};function e(t){var o=n[t];if(void 0!==o)return o.exports;var a=n[t]={id:t,exports:{}};return r[t](a,a.exports,e),a.exports}e.n=r=>{var n=r&&r.__esModule?()=>r.default:()=>r;return e.d(n,{a:n}),n},e.d=(r,n)=>{for(var t in n)e.o(n,t)&&!e.o(r,t)&&Object.defineProperty(r,t,{enumerable:!0,get:n[t]})},e.o=(r,n)=>Object.prototype.hasOwnProperty.call(r,n),e.nc=void 0,(()=>{var r=e(379),n=e.n(r),t=e(795),o=e.n(t),a=e(569),i=e.n(a),c=e(565),s=e.n(c),l=e(216),d=e.n(l),u=e(589),m=e.n(u),f=e(771),p={};p.styleTagTransform=m(),p.setAttributes=s(),p.insert=i().bind(null,"head"),p.domAPI=o(),p.insertStyleElement=d(),n()(f.Z,p),f.Z&&f.Z.locals&&f.Z.locals;var v=[{min:0,max:18.4,classification:"Menor que 18,5",info:"Magreza",obesity:"0"},{min:18.5,max:24.9,classification:"Entre 18,5 e 24,9",info:"Normal",obesity:"0"},{min:25,max:29.9,classification:"Entre 25,0 e 29,9",info:"Sobrepeso",obesity:"I"},{min:30,max:39.9,classification:"Entre 30,0 e 39,9",info:"Obesidade",obesity:"II"},{min:40,max:99,classification:"Maior que 40,0",info:"Obesidade grave",obesity:"III"}],g=document.getElementById("container-result"),b=document.getElementById("container-calc"),h=document.getElementById("result-classification"),y=document.getElementById("height"),x=document.getElementById("weight"),E=document.getElementById("calc"),w=document.getElementById("clear"),I=document.querySelector("#number-imc span"),L=document.querySelector("#info-imc span"),T=document.getElementById("back");function k(){y.value="",x.value="",I.className="",L.className=""}function C(){b.classList.toggle("hide"),g.classList.toggle("hide")}!function(r){r.forEach((function(r){var n=document.createElement("div");n.classList.add("table-data");var e=document.createElement("p");e.innerText=r.classification;var t=document.createElement("p");t.innerText=r.info;var o=document.createElement("p");o.innerText=r.obesity,n.appendChild(e),n.appendChild(o),n.appendChild(t),h.appendChild(n)}))}(v),[y,x].forEach((function(r){r.addEventListener("input",(function(r){var n=r.target.value.replace(/[^0-9,]/g,"");r.target.value=n}))})),w.addEventListener("click",k),E.addEventListener("click",(function(r){r.preventDefault();var n=+x.value.replace(",","."),e=+y.value.replace(",",".");if(x&&y){var t,o=function(r,n){return(r/(n*n)).toFixed(1)}(n,e);if(v.forEach((function(r){o>r.min&&o<r.max&&(t=r.info)})),t){switch(I.innerText=o,L.innerText=t,t){case"Magreza":case"Sobrepeso":I.classList.add("low"),L.classList.add("low");break;case"Normal":I.classList.add("good"),L.classList.add("good");break;case"Obesidade":I.classList.add("medium"),L.classList.add("medium");break;case"Obesidade grave":I.classList.add("high"),L.classList.add("high")}C()}}})),T.addEventListener("click",(function(){k(),C()}))})()})();
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/index.css */ \"./src/styles/index.css\");\n\nvar data = [{\n  min: 0,\n  max: 18.4,\n  classification: \"Menor que 18,5\",\n  info: \"Magreza\",\n  obesity: \"0\"\n}, {\n  min: 18.5,\n  max: 24.9,\n  classification: \"Entre 18,5 e 24,9\",\n  info: \"Normal\",\n  obesity: \"0\"\n}, {\n  min: 25,\n  max: 29.9,\n  classification: \"Entre 25,0 e 29,9\",\n  info: \"Sobrepeso\",\n  obesity: \"I\"\n}, {\n  min: 30,\n  max: 39.9,\n  classification: \"Entre 30,0 e 39,9\",\n  info: \"Obesidade\",\n  obesity: \"II\"\n}, {\n  min: 40,\n  max: 99,\n  classification: \"Maior que 40,0\",\n  info: \"Obesidade grave\",\n  obesity: \"III\"\n}];\nvar imcResult = document.getElementById(\"container-result\");\nvar imcCalc = document.getElementById(\"container-calc\");\nvar imcDivHide = document.getElementById(\"result-classification\");\nvar heightInput = document.getElementById(\"height\");\nvar weightInput = document.getElementById(\"weight\");\nvar calcBtn = document.getElementById(\"calc\");\nvar clearBtn = document.getElementById(\"clear\");\nvar numberImc = document.querySelector(\"#number-imc span\");\nvar infoImc = document.querySelector(\"#info-imc span\");\nvar backBtn = document.getElementById(\"back\");\nfunction classificationData(data) {\n  data.forEach(function (item) {\n    var div = document.createElement(\"div\");\n    div.classList.add(\"table-data\");\n    var classification = document.createElement(\"p\");\n    classification.innerText = item.classification;\n    var info = document.createElement(\"p\");\n    info.innerText = item.info;\n    var obesity = document.createElement(\"p\");\n    obesity.innerText = item.obesity;\n    div.appendChild(classification);\n    div.appendChild(obesity);\n    div.appendChild(info);\n    imcDivHide.appendChild(div);\n  });\n}\nfunction clearInputs() {\n  heightInput.value = \"\";\n  weightInput.value = \"\";\n  numberImc.className = \"\";\n  infoImc.className = \"\";\n}\nfunction validDigits(text) {\n  return text.replace(/[^0-9,]/g, \"\");\n}\nfunction calcImc(weightInput, heightInput) {\n  var imc = weightInput / (heightInput * heightInput);\n  return imc.toFixed(1);\n}\nfunction showResults() {\n  imcCalc.classList.toggle(\"hide\");\n  imcResult.classList.toggle(\"hide\");\n}\nclassificationData(data);\n[heightInput, weightInput].forEach(function (el) {\n  el.addEventListener(\"input\", function (e) {\n    var updateValue = validDigits(e.target.value);\n    e.target.value = updateValue;\n  });\n});\nclearBtn.addEventListener(\"click\", clearInputs);\ncalcBtn.addEventListener(\"click\", function (el) {\n  el.preventDefault();\n  var weight = +weightInput.value.replace(\",\", \".\");\n  var height = +heightInput.value.replace(\",\", \".\");\n  if (!weightInput || !heightInput) return;\n  var imc = calcImc(weight, height);\n  var info;\n  data.forEach(function (item) {\n    if (imc > item.min && imc < item.max) {\n      info = item.info;\n    }\n  });\n  if (!info) return;\n  numberImc.innerText = imc;\n  infoImc.innerText = info;\n  switch (info) {\n    case \"Magreza\":\n      numberImc.classList.add(\"low\");\n      infoImc.classList.add(\"low\");\n      break;\n    case \"Normal\":\n      numberImc.classList.add(\"good\");\n      infoImc.classList.add(\"good\");\n      break;\n    case \"Sobrepeso\":\n      numberImc.classList.add(\"low\");\n      infoImc.classList.add(\"low\");\n      break;\n    case \"Obesidade\":\n      numberImc.classList.add(\"medium\");\n      infoImc.classList.add(\"medium\");\n      break;\n    case \"Obesidade grave\":\n      numberImc.classList.add(\"high\");\n      infoImc.classList.add(\"high\");\n      break;\n  }\n  showResults();\n});\nbackBtn.addEventListener(\"click\", function () {\n  clearInputs();\n  showResults();\n});\n\n//# sourceURL=webpack://imc/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/styles/index.css":
+/*!******************************!*\
+  !*** ./src/styles/index.css ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://imc/./src/styles/index.css?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	
+/******/ })()
+;
