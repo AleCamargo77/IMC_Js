@@ -30,7 +30,3 @@ module.exports = {
   },
   plugins: [new MiniCssExtractPlugin()],
 };
-// output: {
-//   path: path.resolve(__dirname, "public"),
-//   filename: "[name].bundle.min.js",
-// },
