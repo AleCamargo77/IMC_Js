@@ -1,1 +1,70 @@
-<!doctype html><html lang="pt-br"><head><meta charset="UTF-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="stylesheet" href="index.css"/><script src="/dist/index.js" defer="defer"></script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap" rel="stylesheet"/><title>Calculadora IMC</title><script defer="defer" src="index.js"></script><link href="index.css" rel="stylesheet"></head><body><div class="container"><div id="container-calc"><h2>Calculadora de IMC</h2><form id="form-imc"><div class="form-inputs"><div class="form-control"><label for="height">Altura:</label> <input name="height" id="height" placeholder="Exemplo 1,70"/></div><div class="form-control"><label for="weight">Peso:</label> <input name="weight" id="weight" placeholder="Exemplo 68,5"/></div><div class="btn-control"><button id="calc">Calcular</button> <button id="clear">Limpar</button></div></div></form></div><div id="container-result" class="hide"><p id="number-imc">Seu IMC: <span></span></p><p id="info-imc">Classificação atual: <span></span></p><h3>Confira as classificações:</h3><div id="result-classification"><div class="table-header"><h4>IMC</h4><h4>Classificação</h4><h4>Obesidade</h4></div></div><button id="back">Voltar</button></div></div></body></html>
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="/dist/index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <title>Calculadora IMC</title>
+  <script defer src="index.js"></script><link href="index.css" rel="stylesheet"></head>
+  <body>
+    <div class="container">
+      <div id="container-calc">
+        <h2>Calculadora de IMC</h2>
+        <form id="form-imc">
+          <div class="form-inputs">
+            <div class="form-control">
+              <label for="height">Altura:</label>
+              <input
+                type="text"
+                name="height"
+                id="height"
+                placeholder="Exemplo 1,70"
+              />
+            </div>
+            <div class="form-control">
+              <label for="weight">Peso:</label>
+              <input
+                type="text"
+                name="weight"
+                id="weight"
+                placeholder="Exemplo 68,5"
+              />
+            </div>
+            <div class="btn-control">
+              <button id="calc">Calcular</button>
+              <button id="clear">Limpar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="container-result" class="hide">
+        <p id="number-imc">Seu IMC: <span></span></p>
+        <p id="info-imc">Classificação atual: <span></span></p>
+        <h3>Confira as classificações:</h3>
+        <div id="result-classification">
+          <div class="table-header">
+            <h4>IMC</h4>
+            <h4>Classificação</h4>
+            <h4>Obesidade</h4>
+          </div>
+        </div>
+        <button id="back">Voltar</button>
+      </div>
+    </div>
+  </body>
+</html>
