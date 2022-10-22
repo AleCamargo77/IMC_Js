@@ -1,5 +1,3 @@
-import "./styles/index.css";
-
 const data = [
   {
     min: 0,
