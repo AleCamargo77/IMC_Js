@@ -19,7 +19,11 @@ Inicialmente utilizado HTML e suas tags sem√¢nticas para montagem do corpo da p√
   
  
  <p dir="auto">Link para acessar o projeto: <a target="_blank" href="https://alecamargo77.github.io/IMC_Js/"> Calculadora IMC </a></p>
+ 
  Interface:
+ ![CalculadoraImc](https://user-images.githubusercontent.com/105398640/198846855-174462f1-b3cd-43e4-81ef-7e3237061d1a.gif)
+
+ 
 
 
 
